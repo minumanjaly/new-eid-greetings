@@ -1,0 +1,286 @@
+/* Greetings.css */
+
+.animated-images-container {
+    display: flex;
+    justify-content: left; /* Center images horizontally */
+    gap: 10px; /* Space between images */
+    margin: 20px 0; /* Space around the images */
+  }
+  
+  .animated-image {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+/* Container for normal images */
+.normal-images-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    gap: 30px; /* Space between images */
+    margin: 20px 0; /* Space around the images */
+  }
+  
+  .normal-image {
+    width: 500px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 20px; /* Curved corners for normal images */
+  }
+  /* Heading and buttons section */
+.heading-section {
+    text-align: center; /* Center text and buttons */
+    margin: 40px 0; /* Space around the heading section */
+  }
+  
+  .section-heading {
+    font-size: 150px !important; /* Adjust size as needed */
+    color: #e43939 !important; 
+    font-family:Arial, Helvetica, sans-serif;/* Adjust color as needed */
+    margin-bottom: 10px; /* Space between heading and subheading */
+  }
+  
+  
+  .section-subheading {
+    font-size: 100px !important; /* Adjust size as needed */
+    color: #150d0d; /* Adjust color as needed */
+    margin-bottom: 10px; /* Space between subheading and buttons */
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .action-button {
+    padding: 20px 40px; /* Adjust padding for larger button */
+    font-size: 1000px; /* Adjust font size for larger text */
+    border: none;
+    border-radius: 12px; /* Increase border-radius for more rounded corners */
+    background-color: #2e855e; /* Button background color */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 200px; /* Ensure button has a minimum width */
+    text-align: center; /* Center text inside button */
+  }
+  
+  .action-button:hover {
+    background-color: #dcd436; /* Hover color */
+  }
+  
+  .text-container p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /* Change font family */
+    font-size: 30px; /* Change font size */
+    /* font-weight: bold;  */
+    text-align: center; /* Align text to center, left, or right */
+    line-height: 1.6; /* Adjust line height for readability */
+    color: #333; /* Change text color */
+    margin: 20px 0;
+    width: 35%; /* Space around paragraphs */
+  }
+  .button-element {
+    font-size: 3rem; /* Use rem for better scalability */
+    padding: 1rem 2rem; /* Responsive padding */
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #931bde; /* Default background color */
+    color: #fff; /* Default text color */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Button Hover and Active States */
+  .button-element:hover {
+    background-color: #c7b116; /* Darker shade for hover */
+  }
+  
+  .button-element:active {
+    transform: scale(0.98); /* Slight scaling effect on click */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .button-element {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+      padding: 0.8rem 1.5rem; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button-element {
+      font-size: 1rem; /* Further adjust font size */
+      padding: 0.6rem 1rem; /* Further adjust padding */
+    }
+  }
+  .popup-button, .action-button {
+    padding: 12px 24px; /* Adjust padding */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 40px; /* Change font size */
+    font-weight: bold; /* Change font weight */
+    border: none;
+    border-radius: 8px; /* Adjust button corners */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer;
+    text-align: center; /* Center text inside the button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .popup-button:hover, .action-button:hover {
+    background-color: #0056b3; /* Button hover background color */
+  }
+  
+  .popup-button {
+    margin-right: 10px; /* Space between buttons if needed */
+  }
+  .section-heading {
+    font-family: 'Georgia', serif; /* Different font for headings */
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-subheading {
+    font-family: 'Verdana', sans-serif; /* Different font for subheadings */
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+  }
+      
+
+  .text-container {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .animated-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .left-image {
+    position: absolute; /* Ensure the image is positioned correctly */
+    left: 10%;
+    top: 10%;
+    margin-left: 100px; /* Adjust as needed */
+    width: 800px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .right-image {
+    position: absolute; /* Ensure the image is pos itioned correctly */
+    right: 10%;
+    top: 10%;
+    margin-right: 100px; /* Adjust as needed */
+    width: 500px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .icon-container {
+    text-align: center; /* Center align the icon */
+    margin-top: 50px; /* Add some space from the content above */
+  }
+  
+  .icon-image {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Ensure it behaves like an inline element */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center-aligns buttons horizontally */
+    flex-wrap: wrap; /* Allows buttons to wrap if there's not enough space */
+    gap: 20px; /* Adds space between the buttons */
+  }
+  .popup-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .popup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  .popup-content {
+    background: #5215a7;
+    padding: 150px;
+    border-radius: 70px;
+    position: relative;
+    text-align: center;
+    width: 100%; /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width */
+    height: auto; /* Adjust the height as needed */
+    max-height: 1600px; /* Set a maximum height */
+    overflow: auto; /* Enable scrolling if content overflows */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
+  }
+  
+  .popup-image {
+    width: 100%; /* Ensure image fits within the popup */
+    height: 100%; /* Maintain aspect ratio */
+  }
+  
+  
+  .download-button {
+    padding: 20px 40px;
+    font-weight: bold;
+    font-size: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #dec71b;
+    color: rgb(9, 9, 9);
+    cursor: pointer;
+  }
+  
+  .download-button:hover {
+    background-color: #dca62af1;
+  }
+  
+  .close-popup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .close-popup-button:hover {
+    background: #cc0000;
+  }
+  

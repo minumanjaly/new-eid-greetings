@@ -1,0 +1,13 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between images */
+  }
+  
+  .large-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+  }
+  
