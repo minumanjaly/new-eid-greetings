@@ -1,13 +1,27 @@
-.image-gallery {
+
+  body {
+    overflow-x: hidden;
+  }
+  @media (max-width: 768px) {
+    .animated-image-object {
+      width: 50vw;
+      /* left: 50%; */
+      transform: translate(-50%, -10%);
+    }
+  
+    .animated-image-object img {
+      width: 50vw; /* Adjust as needed */
+    }
+  }
+    
+.animated-images-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Adjust spacing between images */
+    justify-content: left; /* Center images horizontally */
+    gap: 10px; /* Space between images */
+    margin: 20px 0; /* Space around the images */
   }
   
-  .large-image {
-    width: 200px; /* Adjust size as needed */
+  .animated-image {
+    width: 300px; /* Adjust size as needed */
     height: auto;
-    object-fit: cover; /* Ensures the image maintains its aspect ratio */
   }
-  

@@ -14,12 +14,12 @@
   }
   
   .popup-content1 {
-    background: #fff;
+    background: #5319b1;
     padding: 20px;
-    border-radius: 100px !important;
-    max-width: 1200px !important;
-    max-height: 300px !important; /* Decrease height */
-    width: 90%;
+    border-radius: 60px !important;
+    max-width: 400px !important;
+    max-height: 150px !important; /* Decrease height */
+    width: 70%;
     text-align: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     overflow-y: auto; /* Handle overflow */
@@ -27,8 +27,9 @@
   
   
   .popup-message1 {
-    font-size: 50px; /* Increase font size */
-    color: #5319b1; /* Text color */
+    font-size: 15px; /* Increase font size */
+    font-family:Arial, Helvetica, sans-serif;
+    color:  #fff ; /* Text color */
     margin-bottom: 30px; /* Space below the message */
   }
   
@@ -39,8 +40,8 @@
   }
   
   .popup-button1 {
-    padding: 40px 60px;
-    font-size: 40px !important;
+    padding: 5px 10px;
+    font-size: 10px !important;
     color: #111010 !important;
     background-color: hsl(64, 84%, 60%) !important; /* Button background color */
     border: none;
@@ -50,6 +51,6 @@
   }
   
   .popup-button:hover {
-    background-color: #0056b3; /* Button hover background color */
+    background-color: #5319b1; /* Button hover background color */
   }
   

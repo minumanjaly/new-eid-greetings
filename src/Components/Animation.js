@@ -25,33 +25,62 @@ import AnimatedRide2 from "../Assets/rideElement02.0697f036a36413a4c63a.png";
 import AnimatedGuitar from "../Assets/greetingElement04.3bddc3909327b77246aa.png";
 import AnimatedQuote from "../Assets/quoteDayEn.32d9e01712b6522db652.png";
 import './Animation.css';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
 
 const Animation = () => {
   return (
-    <div className="image-gallery">
-      <img src={AnimatedImage1} alt="Animation 1" className="large-image" />
-      <img src={AnimatedImage2} alt="Animation 2" className="large-image" />
-      <img src={AnimatedImage3} alt="Animation 3" className="large-image" />
-      <img src={AnimatedImageLeft} alt="Left Animation" className="large-image" />
-      <img src={AnimatedImageRight} alt="Right Animation" className="large-image" />
-      <img src={AnimatedImage4} alt="Image 4" className="large-image" />
-      <img src={AnimatedImageTak} alt="Image Tak" className="large-image" />
-      <img src={AnimatedGreenBalloon} alt="Green Balloon" className="large-image" />
-      <img src={AnimatedPinkBalloon} alt="Pink Balloon" className="large-image" />
-      <img src={AnimatedPurpleBalloon} alt="Purple Balloon" className="large-image" />
-      <img src={AnimatedOrangeRibbon} alt="Orange Ribbon" className="large-image" />
-      <img src={AnimatedGreenRibbon} alt="Green Ribbon" className="large-image" />
-      <img src={AnimatedPurpleRibbon} alt="Purple Ribbon" className="large-image" />
-      <img src={AnimatedGiftTop} alt="Gift Top" className="large-image" />
-      <img src={AnimatedGiftContainer} alt="Gift Container" className="large-image" />
-      <img src={AnimatedCash1} alt="Cash 1" className="large-image" />
-      <img src={AnimatedCash2} alt="Cash 2" className="large-image" />
-      <img src={AnimatedCash3} alt="Cash 3" className="large-image" />
-      <img src={AnimatedCash4} alt="Cash 4" className="large-image" />
-      <img src={AnimatedRide1} alt="Ride 1" className="large-image" />
-      <img src={AnimatedRide2} alt="Ride 2" className="large-image" />
-      <img src={AnimatedGuitar} alt="Guitar" className="large-image" />
-      <img src={AnimatedQuote} alt="Quote" className="large-image" />
+    <div >
+      <motion.div
+      className='animated-image-object'
+      style={{
+        position: 'absolute',
+        top: '100vh',
+        // top: `calc(38% + ${imagePosition}px)`,
+        transform: 'translate(-50%, -50%)',
+        width: '15vw',
+    height: 'auto',
+      }}
+    >
+          <img src={AnimatedBackground1} alt="Animated Object 1" style={{ width: '100vw', height: 'auto' }} />
+          
+        </motion.div>
+        <motion.div
+      className='animated-image-object'
+      style={{
+        position: 'absolute',
+        // top: '55%',
+        // left: `calc(38% + ${imagePosition}px)`,
+        transform: 'translate(-50%, -50%)',
+        width: '15vw',
+    height: 'auto',
+      }}
+    >
+          <img src={AnimatedBackground2} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} />
+          
+        </motion.div> <motion.div
+      className='animated-image-object'
+      style={{
+        position: 'absolute',
+        // top: '55%',
+        // left: `calc(38% + ${imagePosition}px)`,
+        transform: 'translate(-50%, -50%)',
+        width: '15vw',
+    height: 'auto',
+      }}
+    >
+          <img src={AnimatedImage1} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} />
+          <img src={AnimatedImage2} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} />  
+          <img src={AnimatedImage3} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} />  
+          <img src={AnimatedImage4} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} /> 
+           <img src={AnimatedImageLeft} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} /> 
+            <img src={AnimatedGiftTop} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} />
+            <img src={AnimatedGreenBalloon} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} />
+            <img src={AnimatedGreenRibbon} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} />
+            <img src={AnimatedGuitar} alt="Animated Object 1" style={{ width: '20vw', height: 'auto' }} />
+
+          
+        </motion.div>
     </div>
   );
 };
